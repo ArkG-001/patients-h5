@@ -25,7 +25,6 @@ const onClickRight = () => {
 <template>
   <van-nav-bar
     fixed
-    left-text="返回"
     left-arrow
     :title="title"
     :right-text="rightText"
@@ -35,15 +34,13 @@ const onClickRight = () => {
 </template>
 
 <style lang="scss" scoped>
-:deep() {
-  .van-nav-bar {
-    &__arrow {
-      font-size: 18px;
-      color: var(--cp-text1);
-    }
-    &__text {
-      font-size: 15px;
-    }
+:deep(.van-nav-bar) {
+  &__arrow {
+    font-size: 18px;
+    color: var(--cp-text1);
+  }
+  &__text {
+    font-size: 15px;
   }
 }
 </style>
